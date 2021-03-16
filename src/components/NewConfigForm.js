@@ -107,6 +107,7 @@ function NewConfigForm() {
               type={valueType}
               currentValue={currentValue}
               setCurrentValue={setCurrentValue}
+              size="medium"
             />
           </div>
 

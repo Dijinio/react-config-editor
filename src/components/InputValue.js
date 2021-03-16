@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TextField, Checkbox } from "@material-ui/core";
 
-function InputValue({ type, currentValue, setCurrentValue }) {
+function InputValue({ type, currentValue, setCurrentValue, size }) {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
@@ -31,6 +31,7 @@ function InputValue({ type, currentValue, setCurrentValue }) {
           required
           fullWidth
           type={type}
+          size={size}
           onChange={(e) => setCurrentValue(e.target.value)}
         />
       </>
